@@ -50,7 +50,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
+                    'mini-css-extract-plugin',
                     {
                         loader: 'css-loader',
                         options: {
