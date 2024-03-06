@@ -89,6 +89,9 @@ module.exports = {
             APLAYER_VERSION: `"${require('../package.json').version}"`,
             GIT_HASH: JSON.stringify(gitRevisionPlugin.version()),
         }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css', // 输出的 CSS 文件名称
+        }),
     ],
 
     node: {
